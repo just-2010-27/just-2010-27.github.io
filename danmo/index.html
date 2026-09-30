@@ -1,28 +1,69 @@
-<section id="lagu" class="bg-white rounded-xl p-6 border border-[#d4c5b9] shadow-sm space-y-4">
-                <div class="border-b border-[#e8dfd1] pb-3 flex items-center justify-between">
-                    <h2 class="text-2xl font-bold font-cinzel text-paleo-darkbrown flex items-center gap-2">
-                        <i class="fa-solid fa-compact-disc text-paleo-terracotta"></i> Lagu Favorit: Perfevt - Ed Sheeran
-                    </h2>
-                    <span class="text-xs font-semibold px-2.5 py-1 bg-paleo-cream text-paleo-darkbrown rounded border border-paleo-brown/20">Pemutar Aktif</span>
-                </div>
-                <p class="text-sm text-paleo-charcoal/90">
-                    Rabu, 28 September 2026 — Putar lagu favoritmu di bawah ini untuk menemani penjelajahan situs.
-                </p>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-                <!-- YouTube Music Embedded Player untuk memastikan tombol berfungsi memutar musik -->
-                <div class="bg-[#fdfbe7] p-4 rounded-lg border border-[#e6a15c]/40 flex flex-col items-center justify-center space-y-3">
-                    <div class="w-full flex items-center justify-between px-2">
-                        <div class="flex items-center gap-2">
-                            <i class="fa-solid fa-music text-paleo-terracotta animate-pulse text-lg"></i>
-                            <span class="font-cinzel font-bold text-sm text-paleo-darkbrown">Perfect - Ed Sheeran</span>
-                        </div>
-                        <a href="https://youtu.be/cNGjD0VG4R8?si=fvHfABHzktL0nXgk" target="_blank" rel="noopener noreferrer" class="text-xs text-blue-800 hover:underline flex items-center gap-1 font-semibold">
-                            <i class="fa-solid fa-external-link-alt text-[10px]"></i> Buka di YouTube Music
-                        </a>
-                    </div>
-                    <!-- Responsive Embed Iframe -->
-                    <div class="w-full aspect-video sm:aspect-[21/9] rounded-lg overflow-hidden border border-[#d4c5b9] shadow-inner bg-black">
-                        <iframe width="100%" height="100%" src="https://https://youtu.be/cNGjD0VG4R8?si=fvHfABHzktL0nXgk" title="Perfect - Ed Sheeran" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-code" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </section>
+    <title>Music Player</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #1e1e1e;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .music-container {
+            width: 800px;
+            max-width: 90%;
+            background: #292929;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .music-container h1 {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .video {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .video iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="music-container">
+
+        <h1>🎵 Lagu Favorit</h1>
+
+        <div class="video">
+            <iframe
+                src="https://www.youtube.com/embed/OT5msu-dap8"
+                title="Lagu YouTube"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+    </div>
+
+</body>
+</html>
