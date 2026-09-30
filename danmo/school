@@ -1,6 +1,18 @@
-<iframe
-    src="https://www.smkn1-tng.sch.id/"
-    width="100%"
-    height="600"
-    style="border: none;">
-</iframe>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website SMKN 1 Tangerang</title>
+</head>
+<body>
+
+    <h1>Website SMKN 1 Tangerang</h1>
+
+    <iframe 
+        src="https://www.smkn1-tng.sch.id"
+        width="100%"
+        height="600"
+        style="border: none;">
+    </iframe>
+
+</body>
+</html>
